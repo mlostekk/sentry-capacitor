@@ -75,6 +75,7 @@ android {
 repositories {
   google()
   mavenCentral()
+  maven { url 'https://jitpack.io' }
 }
 
 
@@ -82,7 +83,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':capacitor-android')
     // implementation 'io.sentry:sentry-android:6.19.0'
-    implementation 'com.github.mlostekk:sentry-capacitor:fix_op'
+    implementation 'com.github.mlostekk:sentry-java:41edb34bcb38900f41349ea23bacfdf7e164c82c'
     testImplementation "junit:junit:$junitVersion"
     androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
